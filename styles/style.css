@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common styles */
+
+/* primary button styles */
+.button-primary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: #b68c5a;
+  color: #ffffff;
+  padding: 15px 29px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+/* all header styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "EB Garamond", serif;
+}
+
+.header-color {
+  color: #414040 !important;
+}
+
+.header-text-white {
+  color: #ffffff;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.h1-margin {
+  margin-top: 150px;
+}
+
+/* paragraph styles */
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+.paragraph-dark-3 {
+  color: #707070;
+}
+
+.paragraph-dark-4 {
+  color: #a0a0a0;
+}
+
+.paragraph-dark-5 {
+  color: #cfcfcf;
+}
+
+.paragraph-dark-6 {
+  color: #e7e7e7;
+}
+
+.paragraph-dark-7 {
+  color: #f3f3f3;
+}
+
+.paragraph-left {
+  text-align: left;
+}
+
+.paragraph-center {
+  text-align: center;
+}
+
+/* list styles */
+li {
+  list-style: none;
+}
+
+/* anchor styles */
+.unstyled-anchor {
+  text-decoration: none;
+  color: #707070;
+}
+
+/* placeholder styles */
+::placeholder {
+  color: #a0a0a0;
+  font-family: "Poppins", sans-serif;
+  padding: 0 0 0 15px;
+}
+
+/* common style end */
+
+/* navigation styles */
+
+.navbar-collapse {
+  flex-grow: 0.5 !important;
+}
+
+.navbar-nav {
+  gap: 2rem;
+}
+
+/* banner styles */
+.banner {
+  background-image: url("../images/banner.png");
+  border-radius: 8px;
+  padding: 150px 245px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30px;
+}
+
+.banner-items {
+  width: 75%;
+  margin: auto;
+}
+
+.banner-items h1 {
+  font-size: 72px;
+}
+
+/* legal practice area section styles */
+
+/* card design */
+.card {
+  padding: 20px 50px;
+}
+
+.card img {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.card-button {
+  background-color: #b68c5a;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* carousel styles */
+.carousel {
+  background-image: url("../images/banner.png");
+  border-radius: 8px;
+  padding: 150px 245px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30px;
+}
+
+.carousel-image {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+/* ask question section styles */
+
+.ask-question-container {
+  display: flex;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/plus-solid.svg") !important;
+}
+.accordion-button::after {
+  background-image: url("../images/minus-solid.svg") !important;
+}
+
+.accordion {
+  gap: 50px;
+}
+
+.ask-question-left,
+.ask-question-right {
+  width: 50%;
+}
+
+/* contact us section design */
+
+.contact-us-container {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-img {
+  width: 25px !important;
+  height: 30px !important;
+}
+
+.contact-left,
+.contact-right {
+  width: 50%;
+}
+
+.contact-right {
+  display: grid;
+  flex-direction: column;
+}
+
+.form-textarea {
+  height: 150px;
+}
+
+/* footer styles */
+
+footer {
+  margin-top: 150px;
+  background-color: #111111;
+  /* padding: 50px 150px; */
+}
+
+.footer-card {
+  padding: 100px 30px;
+}
+
+/* media/responsive queries */
+
+/* extra extra large device */
+@media screen and (min-width: 1400px) {
+  nav,
+  section {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* large device */
+@media screen and (max-width: 992px) {
+  /* navigation styles */
+  .navbar-nav {
+    padding-top: 20px;
+    gap: 0;
+  }
+
+  /* banner & carousel */
+  .banner,
+  .carousel {
+    padding: 120px 150px;
+  }
+
+  .banner-items {
+    width: 100%;
+  }
+
+  /* contact us section design */
+  .contact-us-container {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+/* medium device */
+@media screen and (max-width: 768px) {
+  /* banner & carousel */
+  .banner,
+  .carousel {
+    padding: 80px 80px;
+  }
+
+  .banner-items h1 {
+    font-size: 62px;
+  }
+
+  /* ask question section styles */
+  .ask-question-container {
+    flex-direction: column;
+  }
+
+  .ask-question-left {
+    width: 100%;
+  }
+
+  .ask-question-right {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .accordion {
+    margin-top: 0;
+    transform: translateY(0);
+  }
+}
+
+/* small device */
+@media screen and (max-width: 576px) {
+  /* banner & carousel */
+  .banner,
+  .carousel {
+    padding: 30px 30px;
+  }
+
+  .banner-items h1 {
+    font-size: 52px;
+  }
+
+  /* contact us section design */
+  .contact-us-container {
+    flex-direction: column;
+  }
+
+  .contact-left {
+    width: 100%;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+}
